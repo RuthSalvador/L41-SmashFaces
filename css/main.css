@@ -1,4 +1,7 @@
-/*
-font-family: 'Rokkitt', serif;
-font-family: 'Roboto', sans-serif;
-*/
+.family-rokkitt {
+  font-family: 'Rokkitt', serif;
+}
+
+.family-roboto {
+  font-family: 'Roboto', sans-serif;
+}
