@@ -8,15 +8,38 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto|Rokkitt" rel="stylesheet">
   <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/female-user-icons-1/500/fuser-graduate-512.png" sizes="32x32">
   <link rel="stylesheet" href="css/main.css">
-
 </head>
 <body>
-  <div class="root"></div>
+  <header>
+    <h1 class="family-rokkitt">Smash Faces</h1>
+    <hr>
+    <p class="family-roboto">Bienvenidas al juego de Smash Faces, tu misión es poder identificar a todas tus compañeras de clase ingresando para ellos su nombre. Tienes 5 oportunidades antes de perder 1 punto y pasar a la siguiente.</p>
+  </header>
+  <section>
+    <span><b class="family-rokkitt">Elige tu sede: </b></span>
+    <select>
+      <option value="0">Seleccione una sede</option>
+      <option value="peru">Perú</option>
+      <option value="mexico">México</option>
+    </select>
+    <span><b id="puntos" class="family-rokkitt">Puntos: 0 puntos</b></span>
+    <div id="play">
+      <figure>
+        <img alt="coder">
+      </figure>
+      <main class="family-rokkitt">
+        <div>
+          <label for="name-input">Ingresa su nombre:</label><br>
+          <input id="name-input" type="text" placeholder="Nombre"><br>
+        </div>
+        <button id="comprobar">COMPROBAR</button>
+      </main>
+    </div>
+  </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="coders.js"></script>
-  <script type="text/javascript" src="js/components/header.js"></script>
-  <script type="text/javascript" src="js/components/images.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/peru.js"></script>
+  <script type="text/javascript" src="js/mexico.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
