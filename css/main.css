@@ -25,13 +25,19 @@ header p {
   text-align: justify;
 }
 
+.elige-sede {
+  padding: 14px 0;
+  font-size: 1.3em;
+}
+
 select {
   background-color: #ccc;
+  font-size: 0.9em;
+  margin-left: 14px;
 }
 
 #puntos {
   float: right;
-  width: 140px;
 }
 
 #play {

@@ -6,9 +6,11 @@ var url;
 var click = 0;
 var sede;
 var nameSede;
+var array= [""];
 
-var select = $('select');
-select.on('change', function () {
+
+
+$('select').on('change', function () {
     if($('select').val() == 'peru'){
         sede = peru;
         nameSede = 'peru';
@@ -21,10 +23,11 @@ select.on('change', function () {
         $('#name-input').focus();
     }
 
-    var comprobar = $('#comprobar');
-    comprobar.on('click', function () {
+    var comprobar =
+      $('#comprobar').on('click', function () {
         click += 1;
         var nameCoder = coder.name;
+
         if ((click < 5) && ($('#name-input').val().toLowerCase() == nameCoder.toLowerCase())){
             alert('Excelente acertaste');
             sumarPuntos += 5;
@@ -47,13 +50,15 @@ select.on('change', function () {
 
         }
     });
+
 });
 
 function ElegirCoder(sede, nameSede) {
-        coder = sede[Math.floor(Math.random() * sede.length)];
-        imgCoder = coder.image;
-        url = 'img/' + nameSede + '/' + imgCoder;
-        $('img').attr('src', url);
-        console.log(coder);
-};
+    coder = sede[Math.floor(Math.random() * sede.length)];
+    imgCoder = coder.image;
+    url = 'img/' + nameSede + '/' + imgCoder;
+
+    $('img').attr('src', url);
+    array.push(imgCoder);
+}
 
